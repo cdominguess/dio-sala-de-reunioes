@@ -16,22 +16,22 @@ import java.time.LocalDate;
 @Data
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 @NoArgsConstructor
-@Entity
+@Entity(name = "Sala")
 @Table(name = "sala_reuniao")
 public class Sala {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column
+    @Column(nullable = false)
     private String nome;
 
-    @Column
-    private LocalDate data;
+    @Column(nullable = false)
+    private LocalDate dataCadastro;
 
-    @Column
+    @Column(nullable = false)
     private String horaInicial;
 
-    @Column
+    @Column(nullable = false)
     private String horaFinal;
 }
