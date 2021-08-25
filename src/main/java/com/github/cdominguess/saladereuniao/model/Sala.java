@@ -27,7 +27,7 @@ public class Sala {
     private String nome;
 
     @Column(nullable = false)
-    private LocalDate dataCadastro;
+    private LocalDate dataReuniao;
 
     @Column(nullable = false)
     private String horaInicial;
