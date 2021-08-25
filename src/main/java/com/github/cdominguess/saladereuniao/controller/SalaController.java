@@ -43,7 +43,7 @@ public class SalaController {
                 .orElseThrow(() -> new ResourceNotFoundException(("Sala com ID \" + id + \" não encontrada.")));
 
         objSala.setNome(objReqSala.getNome());
-        objSala.setDataCadastro(objReqSala.getDataCadastro());
+        objSala.setDataReuniao(objReqSala.getDataReuniao());
         objSala.setHoraInicial(objReqSala.getHoraInicial());
         objSala.setHoraFinal(objReqSala.getHoraFinal());
 
